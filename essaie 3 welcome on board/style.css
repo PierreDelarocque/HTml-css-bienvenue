@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+:root {
+  --primary-color: #a306b6;
+  --page-color: #ffffff;
+  --article-color: #d9d9d9;
+}
+
+img {
+  width: 40%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* HEADER */
+
+header {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wild-container {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 2em 0 2em;
+}
+*/ .toto-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.avatar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MAIN */
+
+main {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--article-color);
+  margin: 2em;
+  border-radius: 10px;
+}
+
+button {
+  background-color: var(--primary-color);
+  border-radius: 30px;
+  color: #ffffff;
+  border: 0;
+  padding: 1;
+  margin-bottom: 10px;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: start;
+  margin: 2em;
+  display: flex;
+}
+/*footer */
+
+footer {
+  background-color: var(--article-color);
+  font-size: small;
+  display: flex;
+  justify-content: center;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 992px) {
+  .avatar-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .wild-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 10em;
+  }
+  .toto-container {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100vw;
+  }
+
+  .block-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5em;
+  }
+
+  h1 {
+    width: 260px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-start;
+  }
+  a {
+    margin: 30px;
+  }
+
+  p {
+    padding: 5em;
+    margin: 2em;
+  }
+}
